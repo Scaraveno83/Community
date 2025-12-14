@@ -12,7 +12,7 @@ Setup:
 3. Visit the frontend at http://localhost:3000 and backend at http://localhost:4000
 
 Deploy:
-- Frontend: Use Vercel (or any Next.js host). The frontend includes a vercel.json and PWA manifest.
+- Frontend: Use Vercel (or any Next.js host). The frontend includes a vercel.json and PWA manifest. If you're using a monorepo, set the Root Directory to `packages/frontend` in Vercel project settings or include a `vercel.json` with `builds` referencing `packages/frontend/package.json`.
 - Backend: Use Railway, Heroku, or Docker. Dockerfile and Procfile are included.
 
 CI: see .github/workflows/ci.yml for a sample workflow.
